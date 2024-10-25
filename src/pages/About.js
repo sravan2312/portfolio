@@ -1,0 +1,132 @@
+import React from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
+const AboutContainer = styled.div`
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const Section = styled(motion.div)`
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  transition: transform 0.3s ease;
+`;
+
+const Heading = styled.h2`
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+`;
+
+const SubHeading = styled.h3`
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1rem;
+`;
+
+const Text = styled.p`
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+`;
+
+const SkillList = styled.ul`
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+const SkillItem = styled.li`
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+  font-size: 1rem;
+`;
+
+const About = () => (
+  <AboutContainer>
+    <Heading>About Me</Heading>
+
+    <Section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <SubHeading>Summary</SubHeading>
+      <Text>
+        I am Sravan Kumar Bhavana, currently pursuing my Master of Science in
+        Information Technology at the University of Cincinnati. I have a strong
+        foundation in both software development and data analysis, with hands-on
+        experience in full-stack web development, machine learning, and cloud
+        computing.
+      </Text>
+    </Section>
+
+    <Section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+    >
+      <SubHeading>Education</SubHeading>
+      <Text>
+        <strong>Master of Science in Information Technology</strong><br />
+        University of Cincinnati, Ohio <br />
+        <em>August 2023 - Present</em><br />
+        Relevant Coursework: Web Application Programming, Hacking, Machine
+        Learning, Data Mining, Statistical Data Analysis, Mobile Application
+        Technologies.
+      </Text>
+      <Text>
+        <strong>Bachelor of Technology in Electronics and Communication Engineering</strong><br />
+        Vignan’s Foundation for Science, Technology and Research, Andhra Pradesh, India <br />
+        <em>July 2019 - April 2023</em><br />
+        Relevant Coursework: C Programming, Network Theory, Data Structures,
+        VLSI, Image Processing.
+      </Text>
+    </Section>
+
+    <Section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
+      <SubHeading>Technical Skills</SubHeading>
+      <SkillList>
+        <SkillItem>Python</SkillItem>
+        <SkillItem>C</SkillItem>
+        <SkillItem>C#</SkillItem>
+        <SkillItem>JavaScript</SkillItem>
+        <SkillItem>Java</SkillItem>
+        <SkillItem>MySQL</SkillItem>
+        <SkillItem>C++</SkillItem>
+        <SkillItem>HTML</SkillItem>
+        <SkillItem>CSS</SkillItem>
+        <SkillItem>Angular</SkillItem>
+        <SkillItem>.NET</SkillItem>
+        <SkillItem>React</SkillItem>
+        <SkillItem>Git</SkillItem>
+        <SkillItem>AWS</SkillItem>
+        <SkillItem>Linux</SkillItem>
+        <SkillItem>Jupyter Notebook</SkillItem>
+        <SkillItem>Tableau</SkillItem>
+      </SkillList>
+    </Section>
+  </AboutContainer>
+);
+
+export default About;
