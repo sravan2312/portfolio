@@ -1,5 +1,7 @@
 // src/GlobalStyles.js
 import { createGlobalStyle } from 'styled-components';
+import bannerImage from '../assets/img/header-img.svg'; // Adjust path based on image location
+
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -10,7 +12,11 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-image: url(${bannerImage});
+    background-size: 35%;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #333;
     line-height: 1.6;
   }
