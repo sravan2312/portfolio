@@ -8,8 +8,8 @@ const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items:center;
-  text-align:center;
-   padding: 50px 20px;
+  text-align:top;
+   padding: 0px 35px;
 `;
 
 const Heading = styled.h1`

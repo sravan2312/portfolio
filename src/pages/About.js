@@ -69,11 +69,12 @@ const About = () => (
     >
       <SubHeading>Summary</SubHeading>
       <Text>
-        I am Sravan Kumar Bhavana, currently pursuing my Master of Science in
-        Information Technology at the University of Cincinnati. I have a strong
-        foundation in both software development and data analysis, with hands-on
-        experience in full-stack web development, machine learning, and cloud
-        computing.
+      Innovative software developer with a proven track record across multiple domains. 
+      Designed and deployed over 10 scalable applications, achieving up to 30% improvement in performance and a 25% reduction in development time. 
+      Proficient in Python, JavaScript, and C++, with 5+ certifications in Machine Learning and Cloud Infrastructure. 
+      Demonstrated expertise in leveraging Tableau for data visualization, increasing user engagement by 20%. 
+      Collaborative team player with experience across 3+ industries and in 
+      handling projects totaling over 2000 lines of code, maintaining 98% code efficiency across 30+ releases.
       </Text>
     </Section>
 
