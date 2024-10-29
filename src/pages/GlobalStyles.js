@@ -22,20 +22,20 @@ const GlobalStyles = createGlobalStyle`
   /* Spinning background image as a pseudo-element */
   body::after {
     content: '';
-    position: fixed; /* Fixed to stay in the same position on scroll */
+    position: fixed;
     top: 35%; /* Positioned on the right side */
     left: 85%;
-    width: 300px; /* Adjust size as needed */
-    height: 300px; /* Adjust size as needed */
+    width: 300px;
+    height: 300px;
     background-image: url(${bannerImage});
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     transform: translate(-50%, -50%) rotate(0deg);
     animation: spin 20s linear infinite;
-    z-index: -100; /* Ensure it stays in the background */
-    opacity: 0.9; /* Optional: Adjust opacity */
-    pointer-events: none; /* Prevent interference with scrolling or interaction */
+    z-index: -100;
+    opacity: 0.9;
+    pointer-events: none;
   }
 
   /* Keyframes for spinning */
@@ -53,6 +53,35 @@ const GlobalStyles = createGlobalStyle`
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
+  }
+
+  /* Media queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    body {
+      font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    body::after {
+      top: 50%; /* Adjust the background image position */
+      left: 90%; /* Push it further to the edge */
+      width: 200px; /* Reduce size for mobile */
+      height: 200px;
+      opacity: 0.7; /* Slightly reduce opacity for better readability */
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.8rem;
+    }
+
+    body::after {
+      top: 60%;
+      left: 95%;
+      width: 150px; /* Further reduce size for very small screens */
+      height: 150px;
+      opacity: 0.6;
+    }
   }
 `;
 
