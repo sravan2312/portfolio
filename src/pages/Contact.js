@@ -59,20 +59,20 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Use your EmailJS Service ID, Template ID, and User ID
-    emailjs.send(
-      'YOUR_SERVICE_ID', // Replace with your actual EmailJS Service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
-      form,
-      'YOUR_USER_ID' // Replace with your EmailJS User ID
-    )
-    .then((response) => {
-      setStatus({ message: 'Message sent successfully!', success: true });
-      setForm({ name: '', email: '', message: '' });
-    })
-    .catch((error) => {
-      setStatus({ message: 'Failed to send message. Please try again.', success: false });
-    });
+    // Replace these with your actual EmailJS Service ID, Template ID, and Public Key (User ID)
+    const serviceId = 'service_fi9qskj';
+    const templateId = 'template_8dk1vdp';
+    const publicKey = '2NfWrTtTa9EPEV2va';
+
+    emailjs.send(serviceId, templateId, form, publicKey)
+      .then((response) => {
+        setStatus({ message: 'Message sent successfully!', success: true });
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch((error) => {
+        setStatus({ message: 'Failed to send message. Please try again.', success: false });
+        console.error('EmailJS Error:', error); // Log error for debugging
+      });
   };
 
   return (
