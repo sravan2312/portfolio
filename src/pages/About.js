@@ -42,22 +42,6 @@ const Text = styled.p`
   margin: 0.5rem 0;
 `;
 
-const SkillList = styled.ul`
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-`;
-
-const SkillItem = styled.li`
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  margin: 0.5rem;
-  font-size: 1rem;
-`;
-
 const About = () => (
   <AboutContainer>
     <Heading>About Me</Heading>
@@ -100,33 +84,7 @@ const About = () => (
         VLSI, Image Processing.
       </Text>
     </Section>
-
-    <Section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-    >
-      <SubHeading>Technical Skills</SubHeading>
-      <SkillList>
-        <SkillItem>Python</SkillItem>
-        <SkillItem>C</SkillItem>
-        <SkillItem>C#</SkillItem>
-        <SkillItem>JavaScript</SkillItem>
-        <SkillItem>Java</SkillItem>
-        <SkillItem>MySQL</SkillItem>
-        <SkillItem>C++</SkillItem>
-        <SkillItem>HTML</SkillItem>
-        <SkillItem>CSS</SkillItem>
-        <SkillItem>Angular</SkillItem>
-        <SkillItem>.NET</SkillItem>
-        <SkillItem>React</SkillItem>
-        <SkillItem>Git</SkillItem>
-        <SkillItem>AWS</SkillItem>
-        <SkillItem>Linux</SkillItem>
-        <SkillItem>Jupyter Notebook</SkillItem>
-        <SkillItem>Tableau</SkillItem>
-      </SkillList>
-    </Section>
+     
   </AboutContainer>
 );
 
