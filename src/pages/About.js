@@ -36,7 +36,7 @@ const Section = styled(motion.div)`
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.5), rgba(255, 255, 0, 0.5));
+    background: linear-gradient(45deg, rgba(255, 0, 150, 0.5), rgba(255, 204, 255, 0.5), rgba(255, 255, 0, 0.5));
     background-size: 300% 300%;
     animation: ${lightAnimation} 6s ease infinite;
     mix-blend-mode: overlay;
