@@ -14,15 +14,15 @@ const SkillsContainer = styled.div`
 const SkillCard = styled.div`
   width: 120px;
   height: 140px;
-  background: #333;
-  color: #fff;
+  background: #34f3;
+  color: #000;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex;
   justify-content: center;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(1, 1, 0, 0.2);
   transition: transform 0.3s ease;
 
   &:hover {
